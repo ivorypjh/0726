@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+</head>
+<body>
+    <h3>
+        {% for item in data %}
+        <p> {{item.itemid}} - <a href="detail/{{item.itemid}}">{{item.itemname}}</a> - {{item.price}}</p>
+        {% endfor %}
+
+        {% for item in lemondata %}
+        <p> {{item.itemid}} - {{item.itemname}} - {{item.price}}</p>
+        {% endfor %}
+    </h3>
+</body>
+</html>

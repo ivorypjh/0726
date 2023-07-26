@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+</head>
+<body>
+    <h2>
+        {% if age >= 30 %}
+        나이 30 넘음
+        {% else %}
+        넘지 않음
+        {% endif %}
+    </h2>
+    <h3>
+        {% for item in data %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </h3>
+</body>
+</html>
